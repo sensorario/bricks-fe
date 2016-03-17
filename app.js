@@ -1,11 +1,19 @@
-var mainController = angular.module('bricksFe', []);
+var brickApp = angular.module('bricksFe', [
+    'ngRoute',
+    'bricksControllers',
+]);
 
-mainController.controller('BrickCtrl', function ($scope, $http) {
-    $http.get('http://localhost:8080/api/v1/stats/')
-         .success(function(data) {
-             $scope.sets = data.sets;
-             $scope.insights = data.insights;
-             $scope.shops = data.shops;
-             $scope.links = data.links;
-         });
-});
+brickApp.config(['$routeProvider',
+    function ($routeProvider) {
+        $routeProvider.
+            when('/', {
+                templateUrl: 'pages/home.html',
+                controller: 'BrickCtrl'
+            }).
+            when('/sets', {
+                templateUrl: 'pages/sets.html',
+                controller: 'SetCtrl'
+            })
+        ;
+    }
+]);

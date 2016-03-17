@@ -2,20 +2,17 @@
 <html ng-app="bricksFe">
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
         <script src="app.js"></script>
+        <script src="controllers.js"></script>
     </head>
-    <body ng-controller="BrickCtrl">
-        <div id="statistic_container">
-            <ul id="statistics_items">
-                <li>Sets: {{sets}}</li>
-                <li>Insights: {{insights}}</li>
-                <li>Shops: {{shops}}</li>
+    <body>
+        <div id="custom_links">
+            <ul>
+                <li><a href="/#/">Home page</a></li>
+                <li><a href="/#/sets">List of sets</a></li>
             </ul>
         </div>
-        <div id="links">
-            <ul id="links_items" ng-repeat="link in links">
-                <li><a href="{{link.href}}">{{link.rel}}</a></li>
-            </ul>
-        </div>
+        <div ng-view></div>
     </body>
 </html>
