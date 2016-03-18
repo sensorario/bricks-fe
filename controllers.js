@@ -21,7 +21,19 @@ bricksControllers.controller('SetCtrl', [
         console.log('SetCtrl');
         $http.get('http://localhost:8080/api/v1/sets/')
              .success(function(data) {
-                 $scope.sets = data.content;
+                 $scope.sets = data.collection;
+             });
+    }
+]);
+
+bricksControllers.controller('InsightCtrl', [
+    '$scope',
+    '$http',
+    function ($scope, $http) {
+        console.log('InsightCtrl');
+        $http.get('http://localhost:8080/api/v1/insights/')
+             .success(function(data) {
+                 $scope.insights = data.collection;
              });
     }
 ]);
