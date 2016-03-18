@@ -3,18 +3,20 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
-        <script src="app.js"></script>
-        <script src="controllers.js"></script>
+        <script src="resources/js/app.js"></script>
+        <script src="resources/js/controllers.js"></script>
     </head>
     <body>
-        <div id="custom_links">
-            <ul>
-                <li><a href="/#/">Home page</a></li>
-                <li><a href="/#/sets">List of sets</a></li>
-                <li><a href="/#/insights">List of insights</a></li>
-                <li><a href="/#/shops">List of shops</a></li>
-            </ul>
+        <div id="content_menu">
+            <nav id="custom_links">
+                <a href="/#/">Home page</a>
+                <a href="/#/sets">List of sets</a>
+                <a href="/#/insights">List of insights</a>
+                <a href="/#/shops">List of shops</a>
+            </nav>
         </div>
-        <div ng-view></div>
+        <div id="contrent_view">
+            <div ng-view></div>
+        </div>
     </body>
 </html>

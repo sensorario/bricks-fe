@@ -7,19 +7,19 @@ brickApp.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
             when('/', {
-                templateUrl: 'pages/home.html',
+                templateUrl: 'resources/partials/home.html',
                 controller: 'BrickCtrl'
             }).
             when('/sets', {
-                templateUrl: 'pages/sets.html',
+                templateUrl: 'resources/partials/sets.html',
                 controller: 'SetCtrl'
             }).
             when('/insights', {
-                templateUrl: 'pages/insights.html',
+                templateUrl: 'resources/partials/insights.html',
                 controller: 'InsightCtrl'
             }).
             when('/shops', {
-                templateUrl: 'pages/shops.html',
+                templateUrl: 'resources/partials/shops.html',
                 controller: 'ShopCtrl'
             })
         ;
