@@ -37,3 +37,15 @@ bricksControllers.controller('InsightCtrl', [
              });
     }
 ]);
+
+bricksControllers.controller('ShopCtrl', [
+    '$scope',
+    '$http',
+    function ($scope, $http) {
+        console.log('ShopCtrl');
+        $http.get('http://localhost:8080/api/v1/shops/')
+             .success(function(data) {
+                 $scope.shops = data.collection;
+             });
+    }
+]);

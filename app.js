@@ -17,6 +17,10 @@ brickApp.config(['$routeProvider',
             when('/insights', {
                 templateUrl: 'pages/insights.html',
                 controller: 'InsightCtrl'
+            }).
+            when('/shops', {
+                templateUrl: 'pages/shops.html',
+                controller: 'ShopCtrl'
             })
         ;
     }
