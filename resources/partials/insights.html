@@ -1,5 +1,12 @@
-<ul ng-repeat="insight in insights">
-    <li>Shop: {{insight.shop}}</li>
-    <li>Set: {{insight.set}}</li>
-    <li>Value: {{insight.value}}</li>
-</ul>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Insights
+    </div>
+    <div class="panel-body">
+        <ul class="list-group" ng-repeat="insight in insights">
+            <li class="list-group-item">Shop: {{insight.shop}}</li>
+            <li class="list-group-item">Set: {{insight.set}}</li>
+            <li class="list-group-item">Value: {{insight.value}}</li>
+        </ul>
+    </div>
+</div>

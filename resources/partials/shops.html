@@ -1,5 +1,12 @@
-<ul ng-repeat="shop in shops">
-    <li>Shop: {{shop.slug}}</li>
-    <li>Address: {{shop.address}}</li>
-    <li>Name: {{shop.name}}</li>
-</ul>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Shops
+    </div>
+    <div class="panel-body">
+        <ul ng-repeat="shop in shops" class="list-group">
+            <li class="list-group-item">Shop: {{shop.slug}}</li>
+            <li class="list-group-item">Address: {{shop.address}}</li>
+            <li class="list-group-item">Name: {{shop.name}}</li>
+        </ul>
+    </div>
+</div>

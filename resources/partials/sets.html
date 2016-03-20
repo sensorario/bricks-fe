@@ -1,5 +1,12 @@
-<ul ng-repeat="set in sets">
-    <li>{{set.code}}</li>
-    <li>{{set.name}}</li>
-    <li>{{set.pieces}}</li>
-</ul>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Sets
+    </div>
+    <div class="panel-body">
+        <ul class="list-group" ng-repeat="set in sets">
+            <li class="list-group-item">Code: {{set.code}}</li>
+            <li class="list-group-item">Name: {{set.name}}</li>
+            <li class="list-group-item">Pieces: {{set.pieces}}</li>
+        </ul>
+    </div>
+</div>
