@@ -8,4 +8,4 @@
  ./bin/runserver
  ```
 
- - open [website](open http://localhost:8081)
+ - open [website](http://localhost:8081)
