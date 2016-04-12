@@ -9,3 +9,11 @@
  ```
 
  - open [website](http://localhost:8081)
+
+## Build css with less
+
+Use the script `lessc less/bricks.less resources/css/bricks.css`, or alias:
+
+```bash
+./buildless
+```
