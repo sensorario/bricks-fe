@@ -12,7 +12,7 @@
 
 ## Build css with less
 
-Use the script `lessc less/bricks.less resources/css/bricks.css`, or alias:
+Use the script `lessc less/bricks.less web/css/bricks.css`, or alias:
 
 ```bash
 ./buildless
