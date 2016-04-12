@@ -1,2 +1,2 @@
 #!/bin/bash
-lessc less/bricks.less resources/css/bricks.css
+lessc less/bricks.less web/css/bricks.css
