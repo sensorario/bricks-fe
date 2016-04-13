@@ -21,6 +21,10 @@ brickApp.config(['$routeProvider',
             when('/shops', {
                 templateUrl: 'web/partials/shops.html',
                 controller: 'ShopCtrl'
+            }).
+            when('/resources', {
+                templateUrl: 'web/partials/resources.html',
+                controller: 'ResourcesCtrl'
             })
         ;
     }

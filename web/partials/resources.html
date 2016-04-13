@@ -1,0 +1,12 @@
+<div class="panel panel-info" ng-repeat="(verb, routes) in publicResources">
+    <div class="panel-heading">
+        {{verb}}
+    </div>
+    <div class="panel-body">
+        <ul class="list-group" ng-repeat="route in routes">
+            <li class="list-group-item">
+                /{{route[3]}}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -49,3 +49,27 @@ bricksControllers.controller('ShopCtrl', [
              });
     }
 ]);
+
+bricksControllers.controller('ResourcesCtrl', [
+    '$scope',
+    '$http',
+    function ($scope, $http) {
+        // console.log('ResourcesCtrl');
+        $http.get('http://localhost:8080/api/v1/resources/')
+             .success(function(data) {
+                 var routesCollection = {
+                     DELETE:[],
+                     POST:[],
+                     GET:[]
+                 };
+
+                 for (path in data) {
+                     var splittedPath = path.split('_');
+                     var verb = splittedPath[0];
+                     eval('routesCollection.' + verb  + '.push(splittedPath)');
+                 }
+
+                 $scope.publicResources = routesCollection;
+             });
+    }
+]);
