@@ -19,7 +19,7 @@ bricksControllers.controller('SetCtrl', [
     '$http',
     function ($scope, $http) {
         // console.log('SetCtrl');
-        $http.get('http://localhost:8080/api/v1/sets/')
+        $http.get('http://localhost:8080/api/v1/set/')
              .success(function(data) {
                  $scope.sets = data.collection;
              });
@@ -31,7 +31,7 @@ bricksControllers.controller('InsightCtrl', [
     '$http',
     function ($scope, $http) {
         // console.log('InsightCtrl');
-        $http.get('http://localhost:8080/api/v1/insights/')
+        $http.get('http://localhost:8080/api/v1/insight/')
              .success(function(data) {
                  $scope.insights = data.collection;
              });
@@ -43,7 +43,7 @@ bricksControllers.controller('ShopCtrl', [
     '$http',
     function ($scope, $http) {
         // console.log('ShopCtrl');
-        $http.get('http://localhost:8080/api/v1/shops/')
+        $http.get('http://localhost:8080/api/v1/shop/')
              .success(function(data) {
                  $scope.shops = data.collection;
              });
